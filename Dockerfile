@@ -8,10 +8,8 @@ RUN npm install
 
 COPY . .
 
-ENV NODE_ENV prouction
+EXPOSE 3002
 
-EXPOSE 3000
-
-CMD ["npm","start"]
+CMD ["node","index.js"]
 
 
